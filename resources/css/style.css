@@ -1,0 +1,756 @@
+/*========================================
+
+Template Name: Momin Khan - An Awesome Personal Portfoloi Template
+Template URI: #
+Description:Momin Khan- An Awesome Personal Portfoloi Template
+Author: Momin Khan
+Author URI: mominkhan.me
+Support: Momin Khan
+Version: 1.0
+
+========================================*/
+
+/*========================================
+
+CSS INDEX
+=========
+
+1. Common css
+2. Hero
+3. About
+4. WORK
+5. Experiment Section
+6. Work
+7. Testimonial
+8. Contact
+9. Footer
+
+========================================*/
+
+/* Common css */
+
+/* Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background: #fff;
+    color: #000;
+    font-family: font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+h1{
+    font-family: font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 650%;
+    color: #fff;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+/* Reusuble Componet*/
+
+.row{
+    max-width: 1080px;
+    margin: auto;
+}
+
+section{
+    padding: 120px 0;
+}
+
+.btn:link,
+.btn:visited{
+    width: 200px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 160%;
+    font-weight: 700;
+    border: 1px solid #FF2B4A;
+    transition: 0.5s;
+}
+
+.btn:hover,
+.btn:visited{
+    background: transparent;
+}
+
+/*========================================
+
+2. HERO
+
+========================================*/
+
+header{
+    background: linear-gradient(rgba(11, 13, 13, 0.8), rgba(0, 0, 0, 0.8)),url(img/hero.jpg) no-repeat center / cover;
+    height: 100vh;
+}
+
+.logo{
+    height: 80px;
+    margin-top: 45px;
+}
+.nav-icon{
+    float: right;
+    margin-top: 45px;
+    cursor: pointer;
+}
+.nav-icon ion-icon{
+    font-size: 450%;
+    color: white;
+    border: 1px solid #fff;
+}
+
+h1::before{
+    content: '';
+    display:block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+h1::after{
+    content: '';
+    display:block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    margin-top: 10px;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 400%;
+    font-weight: 700;
+    line-height: 5px;
+    color: #fff;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 260%;
+    color: #fff;
+}
+
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 180%;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h5{
+    font-size: 200%;
+    color: #FF2B4A;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.hero-text-box{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text-box span{
+    font-size: 250%;
+    color: #fff;
+    display: block;
+    margin-top: 25px;
+}
+
+
+/*========================================
+
+HEMBERGUR MENU
+
+========================================*/
+
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.83);
+    z-index: 9999;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.menu-items{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menu-items ul li a{
+    font-size: 250%;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 12px 0;
+    display: inline-block;
+    transform: 0.5s;
+}
+
+.menu-items ul li a:hover{
+    color: #FF2B4A;
+}
+
+.close-btn{
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.close-btn ion-icon{
+    color: #fff;
+    font-size: 350%;
+    border: 1px solid #fff;
+}
+
+
+/*========================================
+
+STICKY MENU
+
+========================================*/
+
+
+nav.sticky{
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.sticky .nav-icon ion-icon{
+    margin-top: -25px;
+}
+
+.sticky .logo{
+    margin-top: -1px;
+}
+
+
+/*========================================
+
+3. ABOUT
+
+========================================*/
+
+#about{
+    background: linear-gradient(rgba(11, 13, 13, 0.8), rgba(0, 0, 0, 0.8)),url(img/my.png) no-repeat center / cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.grid-about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.momin{
+    width: 104%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.intro{
+    font-size: 220%;
+    font-weight: 700;
+    color: #FF2B4A;
+}
+
+.about-momin{
+    font-size: 180%;
+    color: #fff;
+    margin: 30px 0;
+    width: 90%;
+}
+
+.btn-full:link,
+.btn-full:visited{
+  background: #FF2B4A;
+  color: #fff;
+
+}
+
+.btn-full:hover{
+    color: #FF2B4A;
+    background: transparent;
+}
+
+
+/*========================================
+
+SKILL BAR
+
+========================================*/
+
+
+.skill-box{
+    margin-top: 17px;
+}
+.skill-box p{
+    font-size: 200%;
+    color:#fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.skill-box p:nth-child(2){
+    float: right;
+    margin-top: -30px;
+}
+
+.skill{
+    border: 1px solid #B3E3D5;
+    padding: 5px;
+}
+
+.skill-bar{
+    height: 8px;
+    background: #B3E3D5;
+}
+
+.html5 {
+    animation: html5 4s;
+}
+.css3{
+    animation: css3 4s;
+}
+
+.bootstrap4 {
+    animation: bootstrap4 4s;
+}
+
+.jquery {
+    animation: jquery 4s;
+}
+
+.wordpress {
+    animation: wordpress 4s;
+}
+
+
+/*========================================
+
+ANIMATION
+
+========================================*/
+
+@keyframes html5 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes css3 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes bootstrap4 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes jquery {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes wordpress {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+
+
+
+/*========================================
+
+4. WORK
+
+========================================*/
+#process{
+    background: linear-gradient(rgba(11, 13, 13, 0.8), rgba(0, 0, 0, 0.8)),url(img/work.jpg) no-repeat center / cover;
+    height: 100vh;
+    text-align: center;
+}
+.work{
+   text-align: center;
+}
+.work p{
+    font-size: 220%;
+    font-weight: 700;
+    color: #FF2B4A;
+    padding-top: 45px;
+    margin-bottom: 55px;
+}
+
+.grid-process-container{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+.grid-process-items{
+   padding: 80px;
+}
+
+.grid-process-items:nth-child(1){
+    background:#10C6FC;
+}
+
+.grid-process-items:nth-child(2){
+    background:#835AEB;
+}
+
+.grid-process-items:nth-child(3){
+    background:#002453;
+}
+
+.grid-process-items:nth-child(4){
+    background:#FF2B4A;
+}
+.icons ion-icon{
+    font-size: 40px;
+    color: #fff;
+}
+
+.portfolio-filter{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.portfolio-filter button{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #FF2B4A;
+    padding: 10px;
+    font-size: 180%;
+    cursor: pointer;
+    margin: 0 10px;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.portfolio-filter button:hover{
+    border: 1px solid #FF2B4A;
+    background: #FF2B4A;
+    color: #fff;
+}
+
+/*========================================
+
+5. Experiment Section
+
+========================================*/
+
+#experiment{
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.81)),url(img/experience.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+.grid-ex-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+.grid-ex-items{
+    background: rgba(0, 0,0 , 0.8);
+    padding: 30px;
+}
+
+
+.experiment h4{
+    font-size: 160%;
+    margin-top: 25px;
+    color: #FF2B4A;
+}
+
+.experiment span{
+    font-size: 160%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.experiment P{
+    font-size: 160%;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+hr{
+    border: none;
+    border: 1px solid #FF2B4A;
+}
+
+/*========================================
+
+6. Work
+
+========================================*/
+
+#work{
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.81)),url(img/10.jpg) no-repeat center / cover;
+}
+
+.work-details{
+    text-align: center;
+}
+
+.work-details h2{
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+}
+
+.work-details p{
+    font-size: 220%;
+    color: #FF2B4A;
+}
+
+.grid-work-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(220px, auto);
+    margin-top: 25px;
+}
+
+.grid-work-items{
+    background: #000;
+
+}
+
+.grid-work-items:nth-child(5){
+    background: #453214;
+    grid-column: 1/3;
+}
+
+.grid-work-items:nth-child(1){
+    background: url(img/7.jpg) no-repeat center / cover;
+}
+
+.grid-work-items:nth-child(2){
+    background: url(img/9.jpg) no-repeat center / cover;
+}
+
+.grid-work-items:nth-child(3){
+    background: url(img/6.jpg) no-repeat center / cover;
+}
+
+.grid-work-items:nth-child(4){
+    background: url(img/2.png) no-repeat center / cover;
+}
+.grid-work-items:nth-child(5){
+    background: url(img/8.jpg) no-repeat center / cover;
+}
+
+.grid-work-items:nth-child(6){
+    background: url(img/3.jpg) no-repeat center / cover;
+}
+
+.grid-work-items:nth-child(7){
+    background: url(img/star4.png) no-repeat center / cover;
+}
+
+
+
+
+/*========================================
+
+7. Testimonial
+
+========================================*/
+
+
+#test{
+    background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(img/testimonial.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+.quote img{
+    width: 60px;
+    height: 50px;
+}
+
+.grid-test-container{
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+}
+.grid-test-items p{
+    font-size: 160%;
+    color:#fff;
+    margin-top: 30px;
+}
+
+.signe{
+    width: 160px;
+    height: 58px;
+    margin-top: 50px;
+}
+
+.grid-test-items span{
+    font-size: 160%;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+/*========================================
+
+8. Contact
+
+========================================*/
+
+#contact{
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.81)),url(img/11.jpg) no-repeat center / cover;
+}
+
+.gird-contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.gird-contact-items{
+    background: rgba(0, 0, 0, 0.80);
+    padding: 25px;
+}
+
+.nested-grid-contact-items{
+    background: rgba(0, 0, 0, 0.80);
+     padding: 25px;
+}
+
+#contact h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"],
+.form-control textarea {
+    border: 1px solid #fff;
+    padding: 12px;
+    font-size: 160%;
+    color: #fff;
+    background: transparent;
+    width: 100%;
+    margin: 12px 0;
+}
+
+
+.button{
+    float: right;
+    margin-top: 30px;
+}
+
+.nested-grid-contact-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+}
+
+.nested-grid-contact-items p{
+    font-size: 160%;
+    color: #fff;
+}
+
+/*========================================
+
+9. Footer
+
+========================================*/
+
+#footer{
+    background: #222222;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 120%;
+}
+
+
+.social-icons li{
+    display: inline-block;
+}
+
+.social-icons li a ion-icon{
+    display: inline-block;
+    color: #fff;
+    font-size: 150%;
+    border-right: 1px solid #fff;
+    padding: 0 10px;
+}
+
+.social-icons li:hover a ion-icon{
+    color: #FF2B4A;
+}
